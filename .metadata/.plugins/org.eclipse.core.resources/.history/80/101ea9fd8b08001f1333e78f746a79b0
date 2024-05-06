@@ -1,0 +1,36 @@
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class cls {
+	static WebDriver driver;
+
+	public static void main(String[] args) {
+
+		driver = new ChromeDriver();
+		
+		driver.get("");
+		
+		List<WebElement> dropdowns = driver.findElements(By.xpath(""));
+		
+		
+		for(WebElement list: dropdowns) {
+			
+			String text = list.getText();
+			
+			if(list.getAttribute("id").equals(null)) {
+				
+				System.out.println(list);
+				
+			}
+		}
+		
+		
+	}
+
+}

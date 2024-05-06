@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ArraysBasics.SerachElemementInArray&apos; to &apos;SearchElemementInArray&apos;&#x0D;&#x0A;- Original project: &apos;Learning&apos;&#x0D;&#x0A;- Original element: &apos;ArraysBasics.SerachElemementInArray&apos;&#x0D;&#x0A;- Renamed element: &apos;ArraysBasics.SearchElemementInArray&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SerachElemementInArray&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;ArraysBasics{SerachElemementInArray.java[SerachElemementInArray" matchStrategy="1" name="SearchElemementInArray" qualified="false" references="true" similarDeclarations="false" stamp="1712574445713" textual="false" version="1.0"/>
+</session>

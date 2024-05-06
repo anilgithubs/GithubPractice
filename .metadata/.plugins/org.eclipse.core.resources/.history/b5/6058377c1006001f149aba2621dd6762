@@ -1,0 +1,13 @@
+package progrms;
+
+public class countwords {
+
+	public static void main(String[] args) {
+
+		String str = "java program hi java hello hi program";
+		
+		String[] arr = str.split(" ");
+		
+	}
+
+}

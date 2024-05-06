@@ -1,0 +1,41 @@
+package JqueryDroDown;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class jquery {
+
+	static WebDriver driver;
+
+	public static void main(String[] args) {
+
+		driver = new ChromeDriver();
+
+		driver.get("https://www.jqueryscript.net/demo/Drop-Down-Combo-Tree/#google_vignette");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.findElement(By.id("justAnInputBox")).click();
+		
+		List<WebElement> list = driver.findElements(By.xpath("//span[@class='comboTreeItemTitle']"));
+		
+		for(WebElement chk:list) {
+			
+//			String chkbx = chk.getText();
+//			
+//			if(chkbx.contains("choice 6 2 3")) {
+//				chk.click();
+//				break;
+//			}
+			try {
+				chk.click();
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+	}
+
+}

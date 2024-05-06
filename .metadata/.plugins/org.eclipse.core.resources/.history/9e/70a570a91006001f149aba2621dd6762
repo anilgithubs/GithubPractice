@@ -1,0 +1,32 @@
+package progrms;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class countwords {
+
+	public static void main(String[] args) {
+
+		String str = "java program hi java hello hi program";
+		
+		String[] arr = str.split(" ");
+		int count = 1;
+		Map<String, Integer>map = new HashMap<String, Integer>();
+		
+		for(int i=1; i<arr.length;i++) {
+			
+			if(!map.containsKey(arr[i])) {
+				
+				map.put(arr[i], count);
+			}else {
+				map.put(arr[i], map.get(arr[i])+1);
+			}
+		}
+		
+		for(String x : map.keySet()) {
+			
+			System.out.println("Number of word count"+ x + map.get(x));
+		}
+	}
+
+}
